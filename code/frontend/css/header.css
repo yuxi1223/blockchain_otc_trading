@@ -1,0 +1,171 @@
+/* #region 所有格式 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: "標楷體";
+}
+
+*,
+*:after,
+*::before {
+    box-sizing: inherit;
+}
+a {
+    text-decoration:none;
+}
+button{
+    cursor: pointer;
+}
+body {
+    font-size: 16px;
+}
+
+.container {
+    width: 1280px;
+    height: 832px;
+    margin:0 auto 0 auto;
+   padding-left: 17px;
+   padding-right: 17px;
+   background-color:		#FFFAF4;
+   /* border:1px red solid; */
+}
+
+.header {
+    
+    display: flex;
+    align-items: center;
+    
+    width: 100%;
+    height: 104px;
+    margin: 0 auto;
+    /* border: 1px solid magenta; */
+}
+
+.logo {
+    margin:0 53px 0 42px;
+}
+.search{
+    display: flex;
+    align-items: center;
+    height: 60px;
+    width: 350px;
+    /* border:1px solid red; */
+    margin-right:58px;
+
+    
+}
+.searchphoto:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+input{
+    text-align: center;
+}
+.searchtext{
+    font-size:25px;
+    height:60px;
+    width:297px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* border:1px solid blue; */
+
+}
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    width: 1115px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #F8E0BE;
+     /* border:1px solid blue; */
+    
+}
+.navitem {
+    font-size:25px;
+    height: 104px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    line-height: 25px;
+}
+
+.basemaps {
+    width: 100%;
+    height: 500;
+  }
+  
+  .basemaps-picture {
+    opacity: 0.9;
+    width: 100%;
+    height:191px;
+  
+  }
+/* a:link {
+    color: #000000;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #DB0000;
+    text-decoration: none;
+}
+
+a:active {
+    color: #DB0000;
+    text-decoration: none;
+} */
+.main-area{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    width: 100%;
+    height: 433px;
+    /* border: 1px solid pink; */
+  }
+footer{
+    font-size: 23px;
+    display: flex;
+    align-items: center;
+    margin-top: 27px;
+    width: 100%;
+    height: 37px;
+    background-color: #EFE7DA;
+    /* border: 1px solid blue; */
+  }
+  .connection{
+    margin-left: 92px;
+    margin-right: 49px;
+    width: 108px;
+    /* border: 1px solid blue; */
+  }
+  .line{
+    font-size: 20px;
+    color:#D1CDCD;
+    margin-right: 144px;
+  }
+  .phone{
+    margin-right: 162px;
+    width: 232px;
+    /* border: 1px solid blue; */
+  }
+  .email{
+    width: 376px;
+    /* border: 1px solid blue; */
+  }
+/* #endregion */

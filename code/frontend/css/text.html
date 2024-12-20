@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <!--載入jQuery-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+     <!--載入jQuery UI 1.11.4-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+</head>
+<body>
+    <script>
+
+  var dataUrl= "https://cors-anywhere.herokuapp.com/https://data.gcis.nat.gov.tw/od/data/api/7E6AFA72-AD6A-46D3-8681-ED77951D912D?$format=json&$filter=President_No%20eq%2015725713%20and%20Agency%20eq%20376610000A&$skip=0&$top=50";
+  $.ajax({
+    url: dataUrl,  // 指定API 的 URL 
+    method: 'GET', // 指定請求方法
+    dataType: 'json',// API的格式
+    data: '', //若有傳送資料時的資料設定 (GET沒有)
+    async: true,　//  預設是true=非同步,false=同步 (true時整行可省略)
+    success: res =>{ // 成功的話執行...
+        console.log(res[0].Agency);
+        },
+    error: err =>{ // 失敗的話執行...
+        console.log(res.data);
+        },
+});
+</script>
+</body>
+</html>

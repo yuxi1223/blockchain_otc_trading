@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="../css/header.css" rel="stylesheet">
+    <link href="../css/公司註冊N.css" rel="stylesheet">
+    <link href="../css/公司N.css" rel="stylesheet">
+    <link href="../css/normalize.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首頁</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class='header'>
+            <div class="logo"><img src="../img/stock.png" width="70" height="70">
+            </div>
+            <div class="search">
+
+                <div class="searchphoto" id="searchphoto"><img
+                        src="https://cdn-icons-png.flaticon.com/512/151/151773.png" width="53" height="53"></div>
+                <div class="searchtext">
+                    <form>
+                        <input type="text" name="firstName" id="searchtext" placeholder="股票統一編號代碼">
+                    </form>
+                </div>
+            </div>
+            <nav class='nav'>
+                <div class="navitem">
+                    <a class="navitem__text" href="../html/首頁N.html" ;>首頁</a>
+                </div>
+                <div class="navitem">
+                    <a class="navitem__text" href="../html/身分驗證N.html">個人資產</a>
+                </div>
+                <div class="navitem" id="DivRegisteredCompany">
+                    <a class="navitem__text " href="../html/公司註冊N.html">公司申請</a>
+                </div>
+                <div class="navitem" id="DivConditionOfAssets">
+                    <a class="navitem__text " href="../html/個股查詢N.html">查詢公司</a>
+                </div>
+             
+            </nav>
+        </header>
+
+
+        <div class="basemaps">
+            <img class="basemaps-picture"
+                src="https://göteborg.biz/wp-content/uploads/2017/06/shutterstock_170180204-702x336.jpg ">
+        </div>
+        <div class="body-title"></div>
+        <div class="main-area">
+            <div class="left">
+                <div class="left1">公司資料查詢</div>
+                <a  href="../html/公司基本資料F.html" target="main"><div class="left2">公司基本資料</div></a>
+                <a  href="../html/公司股東名冊F.html" target="main"><div class="left2">公司股東名冊</div></a>
+                <a  href="../html/近期掛買F.html" target="main"><div class="left2">近期掛買股票</div></a>
+                <a  href="../html/近期掛賣F.html" target="main"><div class="left2">近期掛賣股票</div></a>
+            </div>
+            <div class=" center">
+                <iframe name="main" id="frame" src="../html/公司基本資料F.html" width="650px" height="100%" frameborder="0"
+                    frameborder='0' marginwidth='0' marginheight='0' scrolling='no'>
+                </iframe>
+            </div>
+            <div class="form">
+                <div class="top">
+                    <div class="top-text"> 快速掛單</div>
+                </div>
+                <div class="body-line"></div>
+                <div class="bottom">
+                    <div class="text">
+                        <div class="option">
+                           
+                            <div class="text-1">
+                                <div class="text-1-1">價格：</div>
+                                <div class="body-searchtext">
+                                    <form>
+                                        <input class="body-input" type="text" id="price" placeholder="(請輸入掛單價格)"
+                                            value="">
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="text-1">
+                                <div class="text-1-1">股數：</div>
+                                <div class="body-searchtext">
+                                    <form>
+                                        <input class="body-input" type="text" id="quantity" placeholder="(請輸入掛單股數)"
+                                            value="">
+                                    </form>
+                                </div>
+                            </div>
+                           
+                        </div>
+                        <div class="text-2">
+                            <div class="btn1">
+                                <button type="button" class="btn buy" id="buy">買進</button>
+                            </div>
+                            <div class="btn2">
+                                <button type="button" class="btn sell" id="sell">賣出</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="body-line"></div>
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+        <footer>
+            <div class="connection">聯絡我們</div>
+            <div class="line">|</div>
+            <div class="phone">電話：02-12345678</div>
+            <div class="email">電子郵件：t1080000@ntut.org.tw</div>
+
+
+        </footer>
+    </div>
+
+    <script src="../js/jquery-3.6.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0-beta1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/3.2.0/js/adminlte.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.7.3/web3.min.js"></script>
+    <script src="/js/IFNFT_ABI.js"></script>
+    <script src="/js/IFNFT_Contract.js"></script>
+    <script src="../js/畫面載入執行.js"></script>
+    <script src="../js/公司.js"></script>
+</body>
+
+</html>

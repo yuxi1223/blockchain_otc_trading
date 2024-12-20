@@ -1,0 +1,98 @@
+td {
+    font-size: 20px;
+    height: 40px;
+    text-align: center;
+    vertical-align: middle;
+}
+th {
+    height: 40px;
+    font-size: 26px;
+    text-align: center;
+    vertical-align: middle;
+}
+tr {
+    height: 20px;
+    height: 40px;
+    vertical-align: middle;
+}
+table {
+    max-height: 350px;
+    width: 650px;
+    padding: 0;
+    
+
+}
+.div{
+height:400px;
+width: 650px;
+background-color: #F8F2E9;
+/* border:1px solid red; */
+
+
+
+}
+
+
+
+
+.buy{  background-color: red; box-shadow: 0px 5px 0px 0px red;}
+.sell{
+    background-color: green;box-shadow: 0px 5px 0px 0px green;
+}
+.btn {
+  
+
+
+
+    /* border-radius: 5px;
+    padding: 15px 25px;
+    font-size: 22px;
+    text-decoration: none;
+    margin: 20px;
+    color: #fff;
+    position: relative;
+    display: inline-block; 
+    
+    
+    background-color: #55acee;
+  box-shadow: 0px 5px 0px 0px #3C93D5; */
+    
+    width: 70px;
+    font-size: 18px;
+    height: 30px;
+    line-height: 0;
+   
+  
+    font-family: 標楷體;
+    border-radius: 3px;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 5px;
+       color: #fff;
+       position: relative;
+       display: inline-block;
+       /* background-color: #55acee; */
+    
+}
+
+.btn:hover {
+    background-color: #6FC6FF;
+  
+}
+.btn:active {
+    transform: translate(0px, 5px);
+    -webkit-transform: translate(0px, 5px);
+    box-shadow: 0px 1px 0px 0px;
+  }
+
+
+.control {
+
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    width: 650px;
+    height: 40px;
+    background-color: #F8F2E9;
+
+}

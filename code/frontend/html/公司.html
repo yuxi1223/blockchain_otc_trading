@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href="../css/所有格式.css" rel="stylesheet">
+  <link href="../css/公司.css" rel="stylesheet">
+  <link href="../css/normalize.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="title"></title>
+</head>
+
+<body>
+  <header class='header'>
+    <div class="專題網站">專題網站</div>
+    <nav class='nav'>
+      <div class="navitem" style="width:20;">
+        <a class="navitem__text"><img src="https://cdn-icons-png.flaticon.com/512/2626/2626923.png" width="20"
+            height="25"></a>
+      </div>
+      <div class="navitem" style="width: 55px; ">
+        <a class="navitem__text" href="../html/首頁.html" ;>首頁</a>
+      </div>
+      <div class="navitem" style="width:20;">
+        <a class="navitem__text"><img src="https://cdn-icons-png.flaticon.com/512/3721/3721591.png" width="20"
+            height="25"></a>
+      </div>
+      <div class="navitem" style="width: 75px;">
+        <a class="navitem__text" href="../html/個股查詢.html">個股查詢</a>
+      </div>
+      <div class="navitem" id="DivRegisteredCompany" style="width: 75px;">
+        <a class="navitem__text " href="../html/公司註冊.html">公司註冊</a>
+      </div>
+      <div class="navitem" id="DivConditionOfAssets" style="width: 75px;">
+        <a class="navitem__text " href="../html/個人資產.html">資產狀況</a>
+      </div>
+      <div class="navitem" id="DivStockRecord" style="width: 100px;">
+        <a class="navitem__text " href="../html/公司股東名冊.html">公司股東名冊</a>
+      </div>
+    </nav>
+  </header>
+
+
+  <hr>
+  <div class="title"><span id="Company_Name"></span></div>
+
+  <hr>
+
+
+  <div class="container">
+
+    <div class="left">
+      <div class="left_text"><a  href="../html/公司基本資料F.html" target="main">公司基本資料</a></p></div>
+      <div class="left_text"><a  href="../html/公司股東名冊F.html" target="main" ;>公司股東名冊</a></p></div>
+      <div class="left_text"><a  href="../html/近期掛買F.html" target="main" ;>近期已掛買股票</a></p></div>
+      <div class="left_text"><a  href="../html/近期掛賣F.html" target="main" ;>近期已掛賣股票</a></p></div>
+    </div>
+
+    <div class=" center">
+      <iframe name="main" id="frame"
+        src="../html/公司基本資料F.html"
+        width="700" height="500" frameborder="0" frameborder='0' marginwidth='0' marginheight='0' scrolling='no'>
+
+      </iframe>
+    </div>
+
+
+    <div class=" right">
+      <div class="right_text">快速掛單</div>
+      <div class="right_text" id="stock"></div>
+      <div class="right_text"><input id="price" placeholder="請輸入單價"></div>
+      <div class="right_text"><input id="quantity" placeholder="請輸入股數"></div>
+      <div class="right_text radBtn">
+        <input type="radio" name="transaction" value="buy">買進<br>
+        <input type="radio" name="transaction" value="sell">賣出<br>
+      </div>
+      <div class="right_text"><button class="btn" id="btn"><span>確認</span></button></div>
+    </div>
+
+  </div>
+
+  
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0-beta1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/3.2.0/js/adminlte.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.7.3/web3.min.js"></script>
+  <script src="/js/IFNFT_ABI.js"></script>
+  <script src="/js/IFNFT_Contract.js"></script>
+  <script src="../js/畫面載入執行.js"></script>
+  <script src="../js/公司.js"></script>
+</body>
+
+</html>

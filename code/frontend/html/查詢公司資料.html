@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="../css/所有格式.css" rel="stylesheet">
+    <link href="../css/查詢公司資料.css" rel="stylesheet">
+    <link href="../css/normalize.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>查詢公司資料</title>
+</head>
+
+<body>
+    <header class='header'>
+        <div class="專題網站">專題網站</div>
+        <nav class='nav'>
+          <div class="navitem" style="width:20;">
+            <a class="navitem__text"><img src="https://cdn-icons-png.flaticon.com/512/2626/2626923.png" width="20"
+                height="25"></a>
+          </div>
+
+          <div class="navitem" style="width: 55px; ">
+            <a class="navitem__text" href="../html/首頁.html" ;>首頁</a>
+          </div>
+          <div class="navitem" style="width:20;">
+            <a class="navitem__text"><img src="https://cdn-icons-png.flaticon.com/512/3721/3721591.png" width="20"
+                height="25"></a>
+          </div>
+          <div class="navitem" style="width: 75px;">
+            <a class="navitem__text" href="../html/個股查詢.html">個股查詢</a>
+          </div>
+          <div class="navitem" id="DivRegisteredCompany" style="width: 75px;">
+            <a class="navitem__text " href="../html/公司註冊.html">公司註冊</a>
+          </div>
+          <div class="navitem" id="DivConditionOfAssets" style="width: 75px;">
+            <a class="navitem__text " href="../html/個人資產.html">資產狀況</a>
+          </div>
+          <div class="navitem" id="DivStockRecord" style="width: 100px;">
+            <a class="navitem__text " href="../html/公司股東名冊.html">公司股東名冊</a>
+          </div>
+        </nav>
+      </header>
+
+
+
+      <hr >
+      <div class="title">查詢公司資料</div>
+      <hr>
+      <div class="form">
+          <form>
+              <label for="">請輸入統一編號
+                  <input type="text" name="firstName" id="symbol" value="">
+              </label>
+              <br>
+              <br>
+              <button type="button" class="btn btn-warning" id="btn">輸入</button>
+              <button type="button" class="btn btn-warning" id="btn1">審核公司(按下會通過審核)</button>
+          </form>
+      </div>
+
+      <br>
+      <p id="address">帳號：</p>
+      <p id="name">公司名稱：</p>
+      <p id="status">審核狀態：</p>
+      <p id="total">授權股數：</p>
+      <style>p{text-align: center;font-size: 30px;}</style>
+
+      <script src="../js/jquery-3.6.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0-beta1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/3.2.0/js/adminlte.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.7.3/web3.min.js"></script>
+    <script src="/js/IFNFT_ABI.js"></script>
+    <script src="/js/IFNFT_Contract.js"></script>
+    <script src="../js/畫面載入執行.js"></script>
+    <script src="../js/查詢公司資料.js"></script>
+</body>
+
+</html>
